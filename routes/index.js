@@ -1,10 +1,10 @@
 const router = require('express').Router();
-const userCont = require('../controllers/userController');
+const contCont = require('../controllers/contactController');
 
 router.get('/', (req, res) => { res.send('Hello World') });
 
-router.get('/users', userCont.getAll);
+router.get('/contacts', contCont.getAll);
 
-router.get('/users/:id', userCont.getSingle);
+router.get('/contacts/:id', contCont.getSingle);
 
 module.exports = router;
