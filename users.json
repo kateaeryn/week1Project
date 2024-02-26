@@ -1,0 +1,31 @@
+[{
+    "firstName": "Curran",
+    "lastName": "Lennart",
+    "email": "curran@packHQ.com",
+    "birthday": "4-16-78",
+    "favoriteColor": "Green"
+},
+
+{
+    "firstName": "Kate",
+    "lastName": "Daniels",
+    "email": "kate@packHQ.com",
+    "birthday": "9-28-82",
+    "favoriteColor": "Red"
+},
+{
+    "firstName": "Mercy",
+    "lastName": "Thompson",
+    "email": "mercy@packHQ.com",
+    "birthday": "6-21-86",
+    "favoriteColor": "Brown"
+},
+{
+"firstName": "Adam",
+"lastName": "Hauptman",
+"email": "adam@packHQ.com",
+"birthday": "5-31-52",
+"favoriteColor": "Blue"
+}
+
+]

@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "express": "^4.18.2"
-  }
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0"
+  },
+  "name": "week1project",
+  "version": "1.0.0",
+  "description": "first project cse341",
+  "main": "server.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kateaeryn/week1Project.git"
+  },
+  "author": "Kate Christensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kateaeryn/week1Project/issues"
+  },
+  "homepage": "https://github.com/kateaeryn/week1Project#readme"
 }
