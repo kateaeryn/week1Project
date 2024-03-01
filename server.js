@@ -1,8 +1,20 @@
 const express = require('express');
 const app = express();
-
+const bodyParser = require('body-parser');
 const mongodb = require('./data/database');
+
+
 const port = process.env.PORT || 5500;
+
+
+app.use(bodyParser.json());
+app.use((req, res, next) => {
+    res.setHeader('Acess-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Z-Key');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+    next();
+});
+app.use('/', require('./routes'));
 
 
 mongodb.initDb((err) => {
@@ -14,6 +26,4 @@ mongodb.initDb((err) => {
 })
 
 
-
-app.use('/', require('./routes'));
 
